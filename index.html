@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>సీమంతం | Seemantham Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700;800&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="invite-card">
+      <div class="top-garland">🌼 🌸 🌼 🌸 🌼</div>
+      <div class="corner corner-left">❀</div>
+      <div class="corner corner-right">❀</div>
+
+      <header class="hero">
+        <p class="blessing">శ్రీ గణేశాయ నమః</p>
+        <h1>సీమంతం</h1>
+        <h2>Seemantham Ceremony</h2>
+        <p class="subtitle">A Telugu Traditional Baby Shower Celebration</p>
+        <div class="baby-badge">👶💙</div>
+      </header>
+
+      <section class="message-panel">
+        <p class="telugu-line">దేవుని ఆశీస్సులతో మరియు పెద్దల దీవెనలతో</p>
+        <p>With the blessings of God and our elders, we warmly invite you and your family to celebrate the Seemantham ceremony of</p>
+        <h3 id="parentsName">Ananya & Arjun</h3>
+        <p>as we joyfully await the arrival of our little prince.</p>
+      </section>
+
+      <section class="details-grid">
+        <article>
+          <span>📅</span>
+          <strong>Date</strong>
+          <p id="eventDate">Sunday, July 12, 2026</p>
+        </article>
+        <article>
+          <span>⏰</span>
+          <strong>Time</strong>
+          <p id="eventTime">5:00 PM onwards</p>
+        </article>
+        <article>
+          <span>📍</span>
+          <strong>Venue</strong>
+          <p id="eventVenue">Sri Lakshmi Banquet Hall, Edison, NJ</p>
+        </article>
+      </section>
+
+      <section class="rsvp-box">
+        <div class="section-title">
+          <p>Kindly Respond</p>
+          <h2>RSVP</h2>
+        </div>
+
+        <form id="rsvpForm">
+          <label>
+            Your Name / మీ పేరు
+            <input id="guestName" type="text" placeholder="Enter your name" required />
+          </label>
+
+          <div class="attendance">
+            <p>Will you attend? / మీరు వస్తారా?</p>
+            <div class="choice-row">
+              <button type="button" class="choice active" data-value="Yes">✅ Yes</button>
+              <button type="button" class="choice" data-value="No">❌ No</button>
+            </div>
+          </div>
+
+          <div class="guest-counter">
+            <p>Number of members attending / ఎంతమంది వస్తారు?</p>
+            <div class="counter-row">
+              <button type="button" id="minusBtn">−</button>
+              <span id="guestCount">1</span>
+              <button type="button" id="plusBtn">+</button>
+            </div>
+          </div>
+
+          <button class="submit-btn" type="submit">Submit RSVP</button>
+          <p id="statusMessage" class="status-message"></p>
+        </form>
+      </section>
+
+      <footer>
+        <p>We look forward to celebrating this beautiful occasion with you.</p>
+        <p class="telugu-footer">మీ రాక మాకు ఆనందం</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
